@@ -1,13 +1,11 @@
-#include <Blink.h>
+#include "Arduino.h"
 
-Blink blink(D4);
-
-void setup() {
-  Serial.begin(115200);
-  Serial.println(“\nBlinkVersion 1.0 Your_First_NameYour_Last_Name”);
-}
-void loop() {
-  blink.on(500);
-  blink.off(300);
-}
-
+class Blink
+{
+  public:
+    Blink(int pin);
+    void on(int time);
+    void off(int time);
+  private:
+    int _pin;
+};
