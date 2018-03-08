@@ -4,7 +4,6 @@
 Blink::Blink(int pin)
 {
   pinMode(pin ,OUTPUT);
-  _pin=pin;
 }
 void Blink::on(int time)
 {
