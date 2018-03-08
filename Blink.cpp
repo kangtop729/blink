@@ -8,7 +8,6 @@ Blink::Blink(int pin)
 }
 void Blink::on(int time)
 {
-  
   digitalWrite(_pin,HIGH);
   delay(time);
 }
